@@ -1,0 +1,225 @@
+/*
+color palette
+
+Off White     #f6f6f6
+Dark gray     #222222
+Light gray    #d3d4d6
+Dark green    #3c8453
+Sandy beige   #bcaa96
+*/
+
+/* General/global styles
+--------------------------------------*/
+/* 
+  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*Default font-size*/
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.btn {
+    background: #3c8453;
+    color: #f6f6f6;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 7px 10;
+    letter-spacing: .1em;
+    line-height: 1;
+}
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30;   
+    max-width: 900px;
+}
+
+
+body {
+    background-color:#f6f6f6;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+
+html, body {
+    height: 100%;
+}
+
+h1, h2, h3 {
+    font-family: "Caveat", cursive;
+    font-weight: 400;
+    margin: 0;
+}
+h1 {
+    font-size: 7rem;
+    line-height: 0.85;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+/* links
+--------------------------------------*/
+a {
+    color: #3c8453;
+}
+
+a:hover {
+    color: #bcaa96;
+    text-decoration: none;
+}
+
+footer a {
+    color: #bcaa96;
+    height: 5px;
+}
+
+footer a:hover {
+    color: #3c8453;
+}
+/* Home Style
+--------------------------------------*/
+.home {
+    background: url(../images/bg-home-office-studio.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.home .content-wrapper{
+    flex: 1 0 auto;
+
+}
+
+.content-bg {
+    background: rgb(255 255 255 / 0.9);
+    padding: 30p;}
+
+    @media screen and (min-width: 650px) {
+        .home .content-wrapper{
+            padding: 10px;
+        }
+        .content-bg {
+            padding: 20px;
+        }
+    }
+
+
+/* Resume Style
+--------------------------------------*/
+.resume header::before {
+    background: url(../images/bg-home-office-studio.jpg) center;
+    background-size: cover;
+    margin: auto;
+    content: "";
+    display: block;
+    height: 400px;
+}
+
+.resume-section {
+    margin: 50px;
+}
+
+.resume-section h2 {
+    border-bottom: 2px dashed #d3d4d6;
+}
+@media screen and (max-width: 500px) {
+    .resume header::before {
+        height:200px;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    h2 {
+        font-size: 2.6rem;
+    }
+}
+
+/* Profile Style
+--------------------------------------*/
+
+/* Project styles
+--------------------------------------*/
+
+/* Work experience styles
+--------------------------------------*/
+
+.work-item {
+    margin: 30px 0;
+}
+
+.work-details p {
+    margin: 0;
+}
+
+@media screen and (min-width: 860px) {
+    .work-item {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        column-gap: 20px;  
+    }
+
+    .work-summary p:first-child {
+        margin-top: 0;
+    }  
+}
+/* Education styles
+---------------------------------------*/
+.education-item {
+    margin: 30px 0;
+}
+.education-item p {
+    margin: 0;
+}
+
+/*Footer Style
+--------------------------------------*/
+footer {
+    background: #222;
+    color: #d3d4d6;
+    padding: 10px;
+}
+
+.socials {
+    list-style-type: none;
+    padding: 0;
+}
+
+.socials li {
+    display: inline-block;
+    margin: 10px;
+}
+
+.socials img {
+    width: 32px;
+}
+
+.socials img:hover {
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 860px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 859px) {
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+}
